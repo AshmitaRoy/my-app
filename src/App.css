@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+  /*Top Navigation Bar*/ 
+  .top-nav-container{
+    width: 100vw;
+    overflow: hide;
+    margin-bottom: 0.7%;
+  } 
+  .top-nav-style{
+    color: #7BB551;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .app-bar-style{
+    color: #7BB551;
+  }
+  
