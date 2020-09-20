@@ -3,6 +3,7 @@ import ProfileIcon from '../viewprofile/ProfileIcon';
 import InputTags from './InputTags';
 import Grid from '@material-ui/core/Grid';
 import BasicTextFields from './InputName';
+import CountrySelect from './InputCountry';
 
 export class EditProfileLayout extends Component {
     render() {
@@ -12,6 +13,7 @@ export class EditProfileLayout extends Component {
                 <Grid container justify="center" alignItems="center">
                     <InputTags />
                     <BasicTextFields/>
+                    <CountrySelect/>
                 </Grid>
             </div>
         );

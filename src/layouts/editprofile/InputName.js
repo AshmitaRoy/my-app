@@ -13,6 +13,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BasicTextFields() {
   const classes = useStyles();
+  const [personName, setPersonName] = React.useState([]);
+
+  const handleChange = (event) => {
+    setPersonName(event.target.value);
+    console.log(personName)
+  };
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
