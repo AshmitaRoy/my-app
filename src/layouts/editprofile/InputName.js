@@ -5,13 +5,13 @@ import TextField from '@material-ui/core/TextField';
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
-      margin: theme.spacing(1),
+      margin: theme.spacing(3),
       width: '25ch',
     },
   },
 }));
 
-export default function BasicTextFields() {
+export default function InputName() {
   const classes = useStyles();
   const [personName, setPersonName] = React.useState([]);
 

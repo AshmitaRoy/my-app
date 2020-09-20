@@ -72,7 +72,7 @@ export default function InteractiveList() {
                       <ReferFriendIcon />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText primary="Refer a friend" />
+                  <ListItemText primary="Read your first article" />
                   <ListItemSecondaryAction>
                     <IconButton edge="end" style={{ color: '#FF0000' }}>
                       <IncompleteIcon />

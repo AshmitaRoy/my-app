@@ -23,7 +23,7 @@ function App() {
           <div className="main-content ">
             <div role="main">
               <Switch>
-                <Route exact path="/" component={ViewProfileLayout} />
+                <Route path="/viewprofile" component={ViewProfileLayout} />
                 <Route path="/editprofile" component={EditProfileLayout} />
               </Switch>
             </div>
