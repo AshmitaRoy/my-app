@@ -17,12 +17,20 @@ const useStyles = makeStyles((theme) => ({
 export default function InputBio() {
   const classes = useStyles();
 
+  const [personBio, setPersonBio] = React.useState([]);
+
+  const handleChange = (event) => {
+    setPersonBio(event.target.value);
+    console.log(personBio)
+  };
+
   return (
     <div>
       <TextField
-        className={classes.margin}
+        classBio={classes.margin}
         id="input-with-icon-textfield"
         label="Write a bio"
+        onChange={handleChange} 
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">

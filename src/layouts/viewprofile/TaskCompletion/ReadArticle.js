@@ -28,8 +28,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function InteractiveList() {
-  const classes = useStyles();
+const handleClick = (event) => {
+    if (this.state.read_complete === 0)
+    {
+        window.open("#readtask", "_self");
+        this.setState({ read_complete : 1 })
+    }
+    else{
+        alert("You've already completed this task!")
+    }
+}
+  
+export default function CreateProfile() {
+    const classes = useStyles();
+    this.state = {
+          read_complete: 0
+      }
 
   return (
     <div className={classes.root}>
@@ -42,40 +56,10 @@ export default function InteractiveList() {
                       <CompleteProfileIcon />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText primary="Create Profile" />
+                  <ListItemText primary="Read your first article!" onClick={handleClick} />
                   <ListItemSecondaryAction>
                     <IconButton edge="end" style={{ color: '#7BB551' }} >
                       <VerifiedUserIcon />
-                    </IconButton>
-                  </ListItemSecondaryAction>
-                </ListItem>
-                <Divider/>
-                
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <CompleteIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText primary="Complete profile" />
-                  <ListItemSecondaryAction>
-                    <IconButton edge="end" style={{ color: '#FF0000' }}>
-                      <IncompleteIcon />
-                    </IconButton>
-                  </ListItemSecondaryAction>
-                </ListItem>
-                <Divider/>
-
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <ReferFriendIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText primary="Read your first article" />
-                  <ListItemSecondaryAction>
-                    <IconButton edge="end" style={{ color: '#FF0000' }} onClick="">
-                      <IncompleteIcon />
                     </IconButton>
                   </ListItemSecondaryAction>
                 </ListItem>

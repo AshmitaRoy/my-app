@@ -28,7 +28,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function InteractiveList() {
+const handleClick = (event) => {
+    alert("You've already completed this task!")
+  }
+
+export default function CreateProfile() {
   const classes = useStyles();
 
   return (
@@ -42,40 +46,10 @@ export default function InteractiveList() {
                       <CompleteProfileIcon />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText primary="Create Profile" />
+                  <ListItemText primary="Create Profile" onClick={handleClick} />
                   <ListItemSecondaryAction>
                     <IconButton edge="end" style={{ color: '#7BB551' }} >
                       <VerifiedUserIcon />
-                    </IconButton>
-                  </ListItemSecondaryAction>
-                </ListItem>
-                <Divider/>
-                
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <CompleteIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText primary="Complete profile" />
-                  <ListItemSecondaryAction>
-                    <IconButton edge="end" style={{ color: '#FF0000' }}>
-                      <IncompleteIcon />
-                    </IconButton>
-                  </ListItemSecondaryAction>
-                </ListItem>
-                <Divider/>
-
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <ReferFriendIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText primary="Read your first article" />
-                  <ListItemSecondaryAction>
-                    <IconButton edge="end" style={{ color: '#FF0000' }} onClick="">
-                      <IncompleteIcon />
                     </IconButton>
                   </ListItemSecondaryAction>
                 </ListItem>
