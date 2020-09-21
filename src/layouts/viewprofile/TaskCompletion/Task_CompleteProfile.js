@@ -12,7 +12,6 @@ import IncompleteIcon from '@material-ui/icons/Error';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import CompleteIcon from '@material-ui/icons/CheckCircle';
 import CompleteProfileIcon from '@material-ui/icons/AccountCircle';
-import ReferFriendIcon from '@material-ui/icons/GroupAdd';
 import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
@@ -29,20 +28,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const handleClick = (event) => {
-    if (this.state.read_complete === 0)
+    if (this.state.edit_complete === 0)
     {
-        window.open("#readtask", "_self");
-        this.setState({ read_complete : 1 })
+        window.open("#editprofile", "_self");
+        this.setState({ edit_complete : 1 })
     }
     else{
         alert("You've already completed this task!")
     }
 }
   
-export default function CreateProfile() {
+export default function CompleteProfile() {
     const classes = useStyles();
     this.state = {
-          read_complete: 0
+          edit_complete: 0
       }
 
   return (
@@ -56,7 +55,7 @@ export default function CreateProfile() {
                       <CompleteProfileIcon />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText primary="Read your first article!" onClick={handleClick} />
+                  <ListItemText primary="Complete your profile" onClick={handleClick} />
                   <ListItemSecondaryAction>
                     <IconButton edge="end" style={{ color: '#7BB551' }} >
                       <VerifiedUserIcon />
