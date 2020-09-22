@@ -8,6 +8,14 @@ import InputBio from './InputBio';
 import { SaveButton } from '../../components/button/SaveButton';
 
 export class EditProfileLayout extends Component {
+        constructor() {
+          this.state = {
+            edit_complete: 0
+         }
+         //maybe return value of 1 or 0 from completeProfile page
+         //parse and setState of edit_complete 
+        }
+        
     render() {
         return (
             <div className="editprofile-container">

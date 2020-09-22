@@ -12,6 +12,7 @@ import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import CompleteProfileIcon from '@material-ui/icons/AccountCircle';
 import Divider from '@material-ui/core/Divider';
 
+const read_complete = 0
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -26,10 +27,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const handleClick = (event) => {
-    if (this.state.read_complete === 0)
+    if (read_complete === 0)
     {
         window.open("#readarticle", "_self");
-        this.setState({ read_complete : 1 })
+        read_complete =  1 
     }
     else{
         alert("You've already completed this task!")
@@ -37,10 +38,7 @@ const handleClick = (event) => {
 }
   
 export default function ReadArticle() {
-    const classes = useStyles();
-    this.setState({
-          read_complete: 0
-      })
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>

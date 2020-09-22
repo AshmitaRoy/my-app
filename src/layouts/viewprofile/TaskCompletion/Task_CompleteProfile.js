@@ -12,6 +12,7 @@ import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import CompleteProfileIcon from '@material-ui/icons/AccountCircle';
 import Divider from '@material-ui/core/Divider';
 
+const edit_complete = 0;
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -29,7 +30,7 @@ const handleClick = (event) => {
     if (this.state.edit_complete === 0)
     {
         window.open("#editprofile", "_self");
-        this.setState({ edit_complete : 1 })
+        edit_complete = 1 
     }
     else{
         alert("You've already completed this task!")
@@ -38,7 +39,6 @@ const handleClick = (event) => {
   
 export default function CompleteProfile() {
     const classes = useStyles();
-    this.setState({ edit_complete: 0 })
 
   return (
     <div className={classes.root}>

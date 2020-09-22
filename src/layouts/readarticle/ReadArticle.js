@@ -10,7 +10,7 @@ const handleClick = (event) => {
 }
 
 export class ReadArticleLayout extends Component {
-    render() {
+        render() {
         return (
             <div className="card read-article-container">
                 <Grid container justify="center" align-items="center">
