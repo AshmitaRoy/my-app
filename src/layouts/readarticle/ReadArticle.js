@@ -15,7 +15,7 @@ export class ReadArticleLayout extends Component {
             <div className="card read-article-container">
                 <Grid container justify="center" align-items="center">
                     <Article />
-                <CBButton onClick={handleClick} label="Complete" 
+                <CBButton onClick={handleClick} label="I Read This" 
                 url="#viewprofile"/>
                 </Grid>
             </div>
