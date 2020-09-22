@@ -37,6 +37,11 @@ const handleClick = (event) => {
     }
 }
   
+const randomFunc = (e) => {
+  //dkjk
+  alert("Hi")
+}
+
 export default function CompleteProfile() {
     const classes = useStyles();
 
