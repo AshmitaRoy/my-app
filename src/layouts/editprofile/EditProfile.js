@@ -8,7 +8,8 @@ import InputBio from './InputBio';
 import { SaveButton } from '../../components/button/SaveButton';
 
 export class EditProfileLayout extends Component {
-        constructor() {
+        constructor(props) {
+        super();
           this.state = {
             edit_complete: 0
          }

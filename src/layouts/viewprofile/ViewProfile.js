@@ -1,19 +1,29 @@
 import React, { Component } from 'react';
 import ProfileTags from './ProfileTags';
 import ProfileIcon from './ProfileIcon';
-import CreateProfile from './TaskCompletion/Task_CreateProfile';
-import ReadArticle from './TaskCompletion/Task_ReadArticle';
-import CompleteProfile from './TaskCompletion/Task_CompleteProfile';
+import TaskCreateProfile from './TaskCompletion/Task_CreateProfile';
+import TaskReadArticle from './TaskCompletion/Task_ReadArticle';
+import TaskCompleteProfile from './TaskCompletion/Task_CompleteProfile';
 
 export class ViewProfileLayout extends Component {
+    componentDidMount(){
+        /*
+        parse URL to find if edited
+        if % > 60% then setState of editcomplete=1
+        if < 60, setState editcomplete=0
+        IconRenderer // similar to WasteSources popup
+        If 1, show 
+        */
+    }
+    
     render() {
         return (
             <div className="viewprofile-container">
                 <ProfileIcon/>
                 <ProfileTags/>
-                <CreateProfile/>
-                <CompleteProfile/>
-                <ReadArticle/>
+                <TaskCreateProfile/>
+                <TaskCompleteProfile/>
+                <TaskReadArticle/>
             </div>
         );
     }

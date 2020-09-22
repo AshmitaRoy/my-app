@@ -29,7 +29,7 @@ const handleClick = (event) => {
     alert("You've already completed this task!")
   }
 
-export default function CreateProfile() {
+export default function TaskCreateProfile() {
   const classes = useStyles();
 
   return (

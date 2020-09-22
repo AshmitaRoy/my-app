@@ -12,7 +12,7 @@ import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import CompleteProfileIcon from '@material-ui/icons/AccountCircle';
 import Divider from '@material-ui/core/Divider';
 
-const read_complete = 0
+let read_complete = 0
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -37,7 +37,7 @@ const handleClick = (event) => {
     }
 }
   
-export default function ReadArticle() {
+export default function TaskReadArticle() {
   const classes = useStyles();
 
   return (
