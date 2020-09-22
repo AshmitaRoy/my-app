@@ -53,7 +53,7 @@ export default function Article() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            AR
+            A
           </Avatar>
         }
         action={

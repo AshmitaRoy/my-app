@@ -8,15 +8,16 @@ const handleClick = (event) => {
     //axios post 10 seeds to viewprofile?
     //send 10seeds in URL and parse in viewprofile?
 }
+
 export class ReadArticleLayout extends Component {
     render() {
         return (
-            <div className="read-article-container">
+            <div className="card read-article-container">
                 <Grid container justify="center" align-items="center">
                     <Article />
-                </Grid>
                 <CBButton onClick={handleClick} label="Complete" 
                 url="#viewprofile"/>
+                </Grid>
             </div>
         );
     }

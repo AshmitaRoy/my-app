@@ -7,8 +7,8 @@ export class CBButton extends Component {
         return (    
                 <Grid container justify="center" alignItems="center" >
                 <Button onClick={this.props.onClick} variant="contained" 
-                href={this.props.url} label={this.props.label}
-                style={{ color: '#7BB551' }}  > 
+                href={this.props.url} value={this.props.label}
+                style={{ backgroundColor: '#7BB551' }}  > 
                 </Button>  
                 </Grid>     
         )
