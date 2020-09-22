@@ -8,9 +8,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
-import IncompleteIcon from '@material-ui/icons/Error';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import CompleteIcon from '@material-ui/icons/CheckCircle';
 import CompleteProfileIcon from '@material-ui/icons/AccountCircle';
 import Divider from '@material-ui/core/Divider';
 
@@ -40,9 +38,7 @@ const handleClick = (event) => {
   
 export default function CompleteProfile() {
     const classes = useStyles();
-    this.state = {
-          edit_complete: 0
-      }
+    this.setState({ edit_complete: 0 })
 
   return (
     <div className={classes.root}>

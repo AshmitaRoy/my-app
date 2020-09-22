@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import InteractiveList from './ProfileCompletion';
 import ProfileTags from './ProfileTags';
 import ProfileIcon from './ProfileIcon';
 import CreateProfile from './TaskCompletion/Task_CreateProfile';
@@ -15,7 +14,6 @@ export class ViewProfileLayout extends Component {
                 <CreateProfile/>
                 <CompleteProfile/>
                 <ReadArticle/>
-                <InteractiveList/>
             </div>
         );
     }

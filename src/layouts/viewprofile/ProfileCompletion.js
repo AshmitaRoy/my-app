@@ -35,36 +35,8 @@ export default function InteractiveList() {
     <div className={classes.root}>
     <Grid container justify="center" align-items="center">
           <div className={classes.demo}>
-            <List>                
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <CompleteIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText primary="Complete profile" />
-                  <ListItemSecondaryAction>
-                    <IconButton edge="end" style={{ color: '#FF0000' }}>
-                      <IncompleteIcon />
-                    </IconButton>
-                  </ListItemSecondaryAction>
-                </ListItem>
-                <Divider/>
+            <List>               
 
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <ReferFriendIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText primary="Read your first article" />
-                  <ListItemSecondaryAction>
-                    <IconButton edge="end" style={{ color: '#FF0000' }} onClick="">
-                      <IncompleteIcon />
-                    </IconButton>
-                  </ListItemSecondaryAction>
-                </ListItem>
-                <Divider/>
 
             </List>
           </div>

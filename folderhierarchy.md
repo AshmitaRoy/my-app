@@ -13,3 +13,4 @@ View Profile components:
     Seed Counter
     Task Completion
 
+Edit Profile components

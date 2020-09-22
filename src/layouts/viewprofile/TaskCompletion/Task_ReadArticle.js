@@ -8,11 +8,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
-import IncompleteIcon from '@material-ui/icons/Error';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import CompleteIcon from '@material-ui/icons/CheckCircle';
 import CompleteProfileIcon from '@material-ui/icons/AccountCircle';
-import ReferFriendIcon from '@material-ui/icons/GroupAdd';
 import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
@@ -41,9 +38,9 @@ const handleClick = (event) => {
   
 export default function ReadArticle() {
     const classes = useStyles();
-    this.state = {
+    this.setState({
           read_complete: 0
-      }
+      })
 
   return (
     <div className={classes.root}>

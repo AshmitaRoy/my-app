@@ -7,9 +7,10 @@ import {
 
 } from "react-router-dom"
 
-import { TopNav } from "./navigation/TopNav"
+import { TopNav } from "./components/navigation/TopNav"
 import { ViewProfileLayout } from "./layouts/viewprofile/ViewProfile"
 import { EditProfileLayout } from "./layouts/editprofile/EditProfile"
+import { ReadArticleLayout } from "./layouts/readarticle/ReadArticle"
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
               <Switch>
                 <Route path="/viewprofile" component={ViewProfileLayout} />
                 <Route path="/editprofile" component={EditProfileLayout} />
+                <Route path="/editprofile" component={EditProfileLayout} />
+                <Route path="/readarticle" component={ReadArticleLayout}/>
               </Switch>
             </div>
           </div>
