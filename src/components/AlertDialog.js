@@ -34,7 +34,8 @@ export class AlertDialog extends Component {
   render() {
     return (
     <div>
-      <Button variant="outlined" style={{ padding: 2, color: '#7BB551' }}
+      
+      <Button variant="outlined" style={{ padding: 15, color: '#7BB551', marginTop: 12}}
       onClick={this.handleClickOpen}>
         {this.props.buttontext}
       </Button>
