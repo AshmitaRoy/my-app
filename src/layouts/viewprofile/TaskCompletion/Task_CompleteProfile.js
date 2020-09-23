@@ -16,13 +16,8 @@ let edit_complete = 0;
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    maxWidth: 799,
-  },
-  demo: {
-    backgroundColor: theme.palette.background.paper,
-  },
-  title: {
-    margin: theme.spacing(4, 4, 0),
+    width: '100%',
+    backgroundColor: "#B9E6D3",
   },
 }));
 

@@ -10,7 +10,7 @@ export class TopNav extends Component {
 
   return (
     <div className="top-nav-container">
-      <AppBar position="static" style={{ backgroundColor: '#7BB551' }} >
+      <AppBar position="static" style={{ backgroundColor: '#4a7337' }} >
         <Toolbar>
           <IconButton edge="start" aria-label="menu" style={{ color: '#fff' }} >
             <MenuIcon />

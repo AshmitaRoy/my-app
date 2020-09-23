@@ -13,28 +13,34 @@ import { AlertComplete } from '../../../components/AlertComplete';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    maxWidth: 799,
+    width: '100%',
+    backgroundColor: "#DDEAE4",
   },
-  demo: {
-    backgroundColor: theme.palette.background.paper,
-  },
-  title: {
-    margin: theme.spacing(4, 4, 0),
+
+  heading: {
+    width: '95%',
+    color: "#fff",
+    backgroundColor: "#C2CBCB",
+    borderRadius: 5,
+    margin: 5,
   },
 }));
-
-const handleClick = (event) => {
-  alert("You've already completed this task!")
-}
 
 export default function TaskCreateProfile() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+
+    <div className="create-profile">
       <Grid container justify="center" align-items="center">
-        <div className={classes.demo}>
+        <div className={classes.heading}>
+          <ListItem>
+            <ListItemText primary="TASK COMPLETION" />
+          </ListItem>
+        </div>
+
+        <div className={classes.root}>
+
           <List>
             <ListItem>
 
@@ -44,7 +50,8 @@ export default function TaskCreateProfile() {
                 </Avatar>
               </ListItemAvatar>
 
-              <ListItemText primary="Create Profile" onClick={handleClick} />
+
+              <ListItemText primary="Create Profile" />
               <ListItemSecondaryAction>
                 <AlertComplete
                   alerttitle="Oops!"
@@ -55,6 +62,7 @@ export default function TaskCreateProfile() {
 
             <Divider />
           </List>
+
         </div>
       </Grid>
     </div>

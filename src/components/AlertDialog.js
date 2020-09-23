@@ -28,7 +28,9 @@ export class AlertDialog extends Component {
     this.setState({
       open:false
     })
-    window.open("#viewprofile", "_self");
+    
+    //send across 100 seeds
+    window.open("#viewprofile?seeds=100", "_self");
   };
 
   render() {

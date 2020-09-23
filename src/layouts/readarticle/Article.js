@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
@@ -19,6 +18,8 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    padding: 4,
+    marginTop: 14,
   },
   media: {
     height: 0,
@@ -63,11 +64,6 @@ export default function Article() {
         }
         title="Vegan Paella Recipe: Cutting out meat can save the planet"
         subheader="September 14, 2020"
-      />
-      <CardMedia
-        className={classes.media}
-        image="/static/images/vegan-paella.jpg"
-        title="Paella dish"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
