@@ -40,7 +40,6 @@ export default function TaskCompleteProfile() {
   return (
     <div className={classes.root}>
     <Grid container justify="center" align-items="center">
-          <div className={classes.demo}>
             <List>
                 <ListItem>
                   <ListItemAvatar>
@@ -58,7 +57,6 @@ export default function TaskCompleteProfile() {
                 <Divider/>
 
             </List>
-          </div>
         </Grid>
     </div>
   );

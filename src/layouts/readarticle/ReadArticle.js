@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Article from './Article';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import queryString from 'query-string'
 import { AlertDialog} from '../../components/AlertDialog';
 
 export class ReadArticleLayout extends Component {

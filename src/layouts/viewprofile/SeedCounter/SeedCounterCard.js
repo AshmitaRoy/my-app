@@ -29,7 +29,7 @@ export default function SeedCounterCard() {
     <Card className={classes.root}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="p" variant="p">
+          <Typography variant="p">
             Your Seed Counter
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">

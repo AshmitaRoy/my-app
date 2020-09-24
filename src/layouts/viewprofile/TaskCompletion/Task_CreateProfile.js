@@ -13,6 +13,7 @@ import { AlertComplete } from '../../../components/AlertComplete';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    flexGrow: 1,
     width: '100%',
     backgroundColor: "#DDEAE4",
   },
@@ -33,14 +34,16 @@ export default function TaskCreateProfile() {
 
     <div className="create-profile">
       <Grid container justify="center" align-items="center">
-        <div className={classes.heading}>
+        
+      <div className={classes.heading}>
           <ListItem>
             <ListItemText primary="TASK COMPLETION" />
           </ListItem>
         </div>
+        </Grid>
 
         <div className={classes.root}>
-
+      <Grid container justify="center" align-items="center">
           <List>
             <ListItem>
 
@@ -51,7 +54,7 @@ export default function TaskCreateProfile() {
               </ListItemAvatar>
 
 
-              <ListItemText primary="Create Profile" />
+              <ListItemText primary="Create your Profile" />
               <ListItemSecondaryAction>
                 <AlertComplete
                   alerttitle="Oops!"
@@ -63,8 +66,8 @@ export default function TaskCreateProfile() {
             <Divider />
           </List>
 
-        </div>
       </Grid>
+        </div>
     </div>
   );
 }

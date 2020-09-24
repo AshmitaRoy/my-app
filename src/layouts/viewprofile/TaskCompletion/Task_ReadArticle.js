@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const handleClick = (event) => {
+  
+  window.open("#readarticle", "_self");
+  /*
     if (read_complete === 0)
     {
         window.open("#readarticle", "_self");
@@ -30,6 +33,7 @@ const handleClick = (event) => {
     else{
         alert("You've already completed this task!")
     }
+    */
 }
   
 export default function TaskReadArticle() {
